@@ -3,7 +3,8 @@ applications:
     path: build/libs/pal-tracker.jar
     routes:
     - route: pal-tracker-b64e8701-dc66-419c-af17-bb86075b1e72.apps.evans.pal.pivotal.io
-
+    services:
+    - tracker-database
     env:
       WELCOME_MESSAGE: Hello from the review environment
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
